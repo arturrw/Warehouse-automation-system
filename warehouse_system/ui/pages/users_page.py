@@ -21,10 +21,10 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from db_manager import DatabaseManager
-from models import UserRecord, UserSession
-from role_policy import VALID_ROLES
-from table_helpers import configure_full_page_table
+from warehouse_system.data.db_manager import DatabaseManager
+from warehouse_system.data.models import UserRecord, UserSession
+from warehouse_system.domain.role_policy import VALID_ROLES
+from warehouse_system.ui.table_helpers import configure_full_page_table
 
 
 class AddUserDialog(QDialog):

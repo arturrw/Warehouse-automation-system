@@ -7,14 +7,14 @@ import sqlite3
 from pathlib import Path
 from typing import List, Optional
 
-from models import (
+from warehouse_system.data.models import (
     CategoryStockSummary,
     DashboardStats,
     InventoryItem,
     StockMovement,
     UserRecord,
 )
-from role_policy import ADMIN_ROLE, VALID_ROLES
+from warehouse_system.domain.role_policy import ADMIN_ROLE, VALID_ROLES
 
 
 class DatabaseManager:

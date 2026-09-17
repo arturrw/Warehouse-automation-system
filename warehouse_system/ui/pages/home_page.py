@@ -5,8 +5,8 @@ Home dashboard page for the Warehouse Automation System.
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QFrame, QGridLayout, QLabel, QVBoxLayout, QWidget
 
-from db_manager import DatabaseManager
-from models import UserSession
+from warehouse_system.data.db_manager import DatabaseManager
+from warehouse_system.data.models import UserSession
 
 LOW_STOCK_THRESHOLD = 10
 

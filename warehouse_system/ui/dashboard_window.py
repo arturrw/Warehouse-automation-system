@@ -14,15 +14,15 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from app_styles import DASHBOARD_STYLESHEET
-from db_manager import DatabaseManager
-from home_page import HomePage
-from inventory_page import InventoryPage
-from models import UserSession
-from reports_page import ReportsPage
-from role_policy import can_manage_users
-from settings_page import SettingsPage
-from users_page import UsersPage
+from warehouse_system.data.db_manager import DatabaseManager
+from warehouse_system.data.models import UserSession
+from warehouse_system.domain.role_policy import can_manage_users
+from warehouse_system.ui.pages.home_page import HomePage
+from warehouse_system.ui.pages.inventory_page import InventoryPage
+from warehouse_system.ui.pages.reports_page import ReportsPage
+from warehouse_system.ui.pages.settings_page import SettingsPage
+from warehouse_system.ui.pages.users_page import UsersPage
+from warehouse_system.ui.styles import DASHBOARD_STYLESHEET
 
 
 class DashboardWindow(QMainWindow):

@@ -15,9 +15,9 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from dashboard_window import DashboardWindow
-from db_manager import DatabaseManager
-from models import UserSession
+from warehouse_system.data.db_manager import DatabaseManager
+from warehouse_system.data.models import UserSession
+from warehouse_system.ui.dashboard_window import DashboardWindow
 
 
 class LoginPage(QMainWindow):

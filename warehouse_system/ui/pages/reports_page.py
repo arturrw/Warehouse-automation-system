@@ -18,8 +18,8 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from db_manager import DatabaseManager
-from table_helpers import configure_data_table, sync_table_height
+from warehouse_system.data.db_manager import DatabaseManager
+from warehouse_system.ui.table_helpers import configure_data_table, sync_table_height
 
 
 class ReportsPage(QWidget):

@@ -22,10 +22,10 @@ from PyQt6.QtWidgets import (
     QWidget,
 )
 
-from db_manager import DatabaseManager
-from models import InventoryItem, UserSession
-from role_policy import can_modify_inventory
-from table_helpers import configure_full_page_table
+from warehouse_system.data.db_manager import DatabaseManager
+from warehouse_system.data.models import InventoryItem, UserSession
+from warehouse_system.domain.role_policy import can_modify_inventory
+from warehouse_system.ui.table_helpers import configure_full_page_table
 
 
 class InventoryItemDialog(QDialog):

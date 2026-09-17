@@ -6,8 +6,8 @@ import uuid
 
 import pytest
 
-from db_manager import DatabaseManager
-from role_policy import ADMIN_ROLE, STAFF_ROLE
+from warehouse_system.data.db_manager import DatabaseManager
+from warehouse_system.domain.role_policy import ADMIN_ROLE, STAFF_ROLE
 
 
 @pytest.fixture
